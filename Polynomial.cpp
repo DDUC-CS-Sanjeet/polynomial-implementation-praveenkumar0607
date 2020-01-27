@@ -7,7 +7,12 @@ class Polynomial
         int * p;
         int deg;
     public:
-        Polynomial(int deg = 1)
+        Polynomial()
+        {
+          p=0;
+          deg=0;
+         }
+        Polynomial(int deg)
         { 
             p = new int[deg+1];
             this->deg = deg;
